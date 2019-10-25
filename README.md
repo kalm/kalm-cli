@@ -21,7 +21,7 @@ Kalm-cli allows you to quickly build an echo server **or** send socket messages 
 **Getting the executable**
 
 ```
-curl -o- https://raw.githubusercontent.com/kalm/kalm-cli/v1.0.0/bin/kalm-cli
+curl https://raw.githubusercontent.com/kalm/kalm-cli/v1.0.0/bin/kalm-cli --output ./kalm-cli
 ```
 
 **Listening and broadcasting back**

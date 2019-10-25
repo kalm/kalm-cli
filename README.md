@@ -52,3 +52,10 @@ kalm-cli tail ws my_channel -p 8080
 
 Check out the manual via `kalm-cli --help`
 
+## Contribute
+
+If you think of something that you want, [open an issue](//github.com/kalm/kalm-cli/issues/new) or file a pull request, we'll be more than happy to take a look!
+
+## License 
+
+[Apache 2.0](LICENSE) (c) 2019 Frederic Charette

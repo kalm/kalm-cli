@@ -1,0 +1,22 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "no-bitwise": 0,
+        "linebreak-style": 1,
+        "no-underscore-dangle": 0,
+        "object-curly-newline": 0,
+        "no-plusplus": 0,
+        "guard-for-in": 0,
+        "no-mixed-operators": 0,
+        "no-param-reassign": 0,
+        "arrow-parens": [2, "as-needed"],
+        "no-continue": 0,
+        "global-require": 0,
+        "max-len": [1, 140]
+    },
+    "env": {
+        "browser": true,
+        "jest": true,
+        "node": true
+    }
+}

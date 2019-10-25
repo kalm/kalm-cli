@@ -1,0 +1,46 @@
+{
+    "name": "kalm-cli",
+    "version": "1.0.0",
+    "description": "The socket optimizer, in a portable format",
+    "main": "index.js",
+    "scripts": {
+      "lint": "eslint **/*.js **/*.spec.js",
+      "lint:fix": "yarn lint --fix",
+      "test": "jest",
+      "build": "pkg index.js --options max_old_space_size=4096 --output bin/kalm-cli --targets node12"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kalm/kalm-cli.git"
+    },
+    "author": "frederic charette <fredericcharette@gmail.com>",
+    "license": "Apache-2.0",
+    "bugs": {
+      "url": "https://github.com/kalm/kalm-cli/issues"
+    },
+    "homepage": "https://kalm.js.org",
+    "contributors": [
+      "frederic charette <fredericcharette@gmail.com>"
+    ],
+    "husky": {
+      "hooks": {
+        "pre-commit": "yarn lint"
+      }
+    },
+    "dependencies": {
+        "@kalm/ipc": "3.2.1",
+        "@kalm/tcp": "3.2.1",
+        "@kalm/udp": "3.2.1",
+        "@kalm/ws": "3.2.1",
+        "kalm": "^3.2.1",
+        "meow": "^5.0.0"
+    },
+    "devDependencies": {
+      "eslint": "^6.5.0",
+      "eslint-config-airbnb-base": "^14.0.0",
+      "husky": "^3.0.8",
+      "jest": "^24.9.0",
+      "pkg": "^4.4.0"
+    }
+  }
+  

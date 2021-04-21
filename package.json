@@ -1,13 +1,13 @@
 {
   "name": "kalm-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The socket optimizer, in a portable format",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js **/*.spec.js",
+    "lint": "eslint index.js tests/**/*.spec.js",
     "lint:fix": "yarn lint --fix",
     "test": "jest",
-    "build": "pkg index.js --options max_old_space_size=4096 --output bin/kalm-cli --targets node12"
+    "build": "pkg index.js --options max_old_space_size=4096 --output bin/kalm-cli --targets node15"
   },
   "repository": {
     "type": "git",
@@ -28,19 +28,19 @@
     }
   },
   "dependencies": {
-    "@kalm/ipc": "3.2.1",
-    "@kalm/tcp": "3.2.1",
-    "@kalm/udp": "3.2.1",
-    "@kalm/ws": "3.2.1",
-    "kalm": "^3.2.1",
+    "@kalm/ipc": "5.0.0",
+    "@kalm/tcp": "5.0.0",
+    "@kalm/udp": "5.0.0",
+    "@kalm/ws": "5.0.0",
+    "kalm": "^5.0.0",
     "meow": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.8",
-    "jest": "^24.9.0",
-    "nexe": "^3.3.2"
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^6.0.0",
+    "jest": "^26.6.0",
+    "nexe": "^3.3.7"
   }
 }

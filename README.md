@@ -24,10 +24,10 @@ Kalm-cli allows you to quickly build an echo server **or** send socket messages 
 curl https://raw.githubusercontent.com/kalm/kalm-cli/v1.0.0/bin/kalm-cli --output ./kalm-cli
 ```
 
-**Listening and broadcasting back**
+**Creating an Echo server that repeats and broadcasts back all messages sent to it**
 
 ```
-kalm-cli listen ws my_channel -p 8080
+kalm-cli echo ws my_channel -p 8080
 
 ```
 
@@ -58,4 +58,4 @@ If you think of something that you want, [open an issue](//github.com/kalm/kalm-
 
 ## License 
 
-[Apache 2.0](LICENSE) (c) 2019 Frederic Charette
+[Apache 2.0](LICENSE) (c) 2021 Frederic Charette
